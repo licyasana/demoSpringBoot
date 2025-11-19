@@ -19,9 +19,15 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Build with Maven
-      run: mvn clean package -DskipTests
+    - name: Cache Maven packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
 
-    - name: Skip tests
-  run: mvn -DskipTests package
+    - name: Build with Maven (project in `demo` folder)
+      working-directory: demo
+      run: mvn -B clean package -DskipTests
 
