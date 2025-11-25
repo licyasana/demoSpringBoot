@@ -6,4 +6,5 @@ com\example\demo\repository\StudentRepository.class
 com\example\demo\model\Student.class
 com\example\demo\controller\UniversityController.class
 com\example\demo\service\UniversityService.class
+com\example\demoTest\DemoApplication.class
 com\example\demo\controller\StudentController.class
