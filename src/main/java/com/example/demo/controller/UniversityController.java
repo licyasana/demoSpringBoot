@@ -1,4 +1,4 @@
-package java.com.example.demo.controller;
+package main.java.com.example.demo.controller;
 
 import com.example.demo.model.University;
 import com.example.demo.service.UniversityService;
