@@ -1,4 +1,4 @@
-package main.java.com.example.demo;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,3 +11,5 @@ public class DemoApplication {
 	}
 
 }
+
+/*rnd_J1g2k21cBHDVgJwMi7nhJY40eYTV */
